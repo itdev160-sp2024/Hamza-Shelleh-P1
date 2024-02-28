@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>Product Reviews</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0pen+Sans">
+<link rel="stylesheet" type="text/css" href="css/master.css">
+<body>
+    <h1>Welcome to the Product Review Page</h1>
+    <ul>
+        <li class="product" data-id="0">
+            <img src="images/watch.jpg" alt="Smartwatch">
+            <h2>Smartwatch</h2>
+            <p>Stay connected with the SmartWatch Pro. Featuring advanced health tracking, notifications, and sleek design.</p>
+            <p>$199.99</p>
+            <div class="details">
+                <p>Additional details about the Smartwatch.</p>
+            </div>
+        </li>
+        <li class="product" data-id="1">
+            <img src="images/ear.jpg" alt="Earbuds">
+            <h2>Earbuds</h2>
+            <p>Enjoy music on the go with the UltraFit Wireless Earbuds. Featuring premium sound quality and comfortable fit.</p>
+            <p>$79.99</p>
+            <div class="details">
+                <p>Additional details about the Earbuds.</p>
+            </div>
+        </li>
+        <li class="product" data-id="2">
+            <img src="images/cam.jpg" alt="Home Camera">
+            <h2>Home Camera</h2>
+            <p>Keep an eye on your home with the Home Smart Security Camera. Featuring motion detection and two-way audio.</p>
+            <p>$129.99</p>
+            <div class="details">
+                <p>Additional details about the Home Camera.</p>
+            </div>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smartwatch</td>
+                <td>$199.99</td>
+            </tr>
+            <tr>
+                <td>Earbuds</td>
+                <td>$79.99</td>
+            </tr>
+            <tr>
+                <td>Home Camera</td>
+                <td>$129.99</td>
+            </tr>
+        </tbody>
+    </table>
+   
+    <form id="review-form">
+        <h2>Submit a Review</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select><br><br>
+        <label for="review">Review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script src="js;scripts/scripts.js"></script>
+</body>
+</html>
